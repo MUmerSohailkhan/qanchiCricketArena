@@ -13,6 +13,12 @@ def homePageFunc():
     return render_template('home.html',posts=posts)
 
 
+@mainB.route("/QSAHome")
+def QSAHome():
+    return render_template('QSAHome.html')
+
+
+
 @mainB.route("/about")
 def aboutPageFunc():
     return render_template('about.html',title='About')
